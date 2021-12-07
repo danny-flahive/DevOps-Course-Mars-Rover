@@ -5,4 +5,15 @@
   <h1 class="display-4">Image of the Day:</h1>
 
   <img src="{{ landing_image }}">
+  <div>
+    <p>Description: {{ image_description }}</p>
+  </div>  
+
+  <div>
+    <form action="/request" id="date_input" method="post">
+      <label for="user_dateinput">Please enter a date here: </label>
+      <input type="date" name="user_dateinput">
+      <input type="submit">
+    </form>
+  </div>
 {% endblock %}
