@@ -13,8 +13,9 @@ def index():
 def mars():
     return render_template('mars.html')
 
-@app.route("/request", methods=["POST"])
+@app.route("/request", methods=["GET"])
 def request_handler():
-    date = request.form.get("user_dateinput")
+    #date = request.form.get("user_dateinput")
+    date = request.args.get("user_dateinput")
     image_url, image_description = get_image_info(date)
     return render_template('index.html', landing_image=image_url, image_description=image_description)
