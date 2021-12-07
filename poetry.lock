@@ -139,7 +139,7 @@ watchdog = ["watchdog"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "ecf99a44b4125f1f686063500fe6050c2aaf8e123f8179350d04b03238c886d1"
+content-hash = "617c220fab99a6d0ea54dd69ae626e77ef6fab2ab545ea6778993b9ae14e0a14"
 
 [metadata.files]
 certifi = [
